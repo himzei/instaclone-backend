@@ -6,7 +6,7 @@ export default gql`
     firstName: String!
     lastName: String
     username: String!
-    eamil: String!
+    email: String!
     createdAt: String!
     updatedAt: String!
   }
@@ -15,7 +15,7 @@ export default gql`
       firstName: String!
       lastName: String
       username: String!
-      eamil: String!
+      email: String!
       password: String!
     ): User
   }
