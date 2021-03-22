@@ -1,5 +1,4 @@
 import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken";
 import client from "../../client";
 import { protectedResolver } from "../users.utils";
 
@@ -8,7 +7,9 @@ const resolverFn = async (
   { firstName, lastName, username, email, password: newPassword, bio, avatar },
   { loggedInUser, protectedResolver }
 ) => {
-  console.log(avatar);
+  const { filename, createReadStream } = await avatar;
+  const stream = createReadStream();
+  console.log(stream);
   protectedResolver(loggedInUser);
   let uglyPassword = null;
   if (newPassword) {
