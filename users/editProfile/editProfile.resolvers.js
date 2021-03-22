@@ -1,3 +1,4 @@
+import fs from "fs";
 import bcrypt from "bcrypt";
 import client from "../../client";
 import { protectedResolver } from "../users.utils";
@@ -8,8 +9,11 @@ const resolverFn = async (
   { loggedInUser, protectedResolver }
 ) => {
   const { filename, createReadStream } = await avatar;
-  const stream = createReadStream();
-  console.log(stream);
+  const readStream = createReadStream();
+  const writeStream = fs.createWriteStream(
+    process.cwd() + "/uploads/" + filename
+  );
+  readStream.pipe(writeStream);
   protectedResolver(loggedInUser);
   let uglyPassword = null;
   if (newPassword) {
@@ -25,6 +29,7 @@ const resolverFn = async (
       username,
       email,
       bio,
+
       ...(uglyPassword && { password: uglyPassword }),
     },
   });
