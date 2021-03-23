@@ -18,6 +18,8 @@ npm operation
 
 ## Photos
 
-- [] See Photo
 - [] Upload Photo
+- [] See Photo
+- [] See Hashtags
 - [] edit Photo
+- [] Like / Unlike photo
