@@ -29,7 +29,7 @@ export default {
         const uglyPassword = await bcrypt.hash(password, 10);
 
         // save and return the user
-        client.user.create({
+        return client.user.create({
           data: {
             username,
             email,
