@@ -9,6 +9,15 @@ npm operation
 - [] See Profile
 - [] Login
 - [] Edit Profile
+- [] Change Avatar (Image Upload)
 - [] Follow User
 - [] Unfollow User
-- [] Change Avatar (Image Upload)
+- [] See Followers and See Following / Pagination
+- [] Computed Fields
+- [] Search Users
+
+## Photos
+
+- [] See Photo
+- [] Upload Photo
+- [] edit Photo
