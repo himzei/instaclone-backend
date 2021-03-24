@@ -15,6 +15,7 @@ npm operation
 - [] See Followers and See Following / Pagination
 - [] Computed Fields
 - [] Search Users
+- [] Is Mine( Delete Photo)
 
 ## Photos
 
@@ -25,4 +26,7 @@ npm operation
 - [] edit Photo
 - [] Like / Unlike photo
 - [] See Photo Likes
+- [] See Photo Comments
 - [] See Feed
+
+## Comments
