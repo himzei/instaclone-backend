@@ -33,7 +33,8 @@ npm operation
 
 ## MMs
 
-- [] Create Room
-- [] Get Room
-- [] Send Message
+- [x] Create Room
+- [x] Get Room
+- [x] Send Message
+- [] See Room
 - [] RealTime Message
