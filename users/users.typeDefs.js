@@ -11,6 +11,7 @@ export default gql`
     updatedAt: String!
     bit: String
     avatar: String
+    photos: [Photo]
     following: [User]
     followers: [User]
     totalFollowing: Int!

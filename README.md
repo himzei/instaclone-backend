@@ -21,5 +21,8 @@ npm operation
 - [] Upload Photo
 - [] See Photo
 - [] See Hashtags
+- [] Search Photos
 - [] edit Photo
 - [] Like / Unlike photo
+- [] See Photo Likes
+- [] See Feed
